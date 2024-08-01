@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Site-Buy Foods Online</title>
+    
+    <link rel="icon" href="./Photos/new logo.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="nav-bar">
+<div class="nav-first">
+    <img src="./Photos/grocery-in-cart-included-with-stars-6045ld.png" alt="Grocery">
+    <h3>Grocery</h3>
+</div>
+<div class="nav-second">
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#products">Products</a>
+    <a href="#">Categories</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#blogs">Blogs</a>
+</div>
+<div class="nav-third">
+    <i class="fa-solid fa-bars hambur"></i>
+    <i class="fa-solid fa-magnifying-glass nav-glass"></i>
+    <i class="fa-solid fa-basket-shopping basket-box"></i>
+    <i class="fa-solid fa-circle-user contact-box"></i>
+</div>
+<form class="search-form" action="#">
+    <input type="search" id="magnify" placeholder="Search any item..." name="ab">
+    <label for="magnify" class="fa-solid fa-magnifying-glass kach-glass"></label>
+</form>
+
+<div class="shop-cart">
+    <div class="food-item">
+        <img src="./Photos/mango.jpg" alt="mango">
+        <div class="cart-text">
+        <p>Mango</p>
+        <p> ₹80/- Qty:1kg</p>
+        </div>
+        <i class="fa-solid fa-trash"></i>
+    </div>
+    <div class="food-item">
+        <img src="./Photos/mutton-meat.webp" alt="mango">
+        <div class="cart-text">
+        <p>Mutton</p>
+        <p>₹2480.17/- Qty:3.5kg</p>
+        </div>
+        <i class="fa-solid fa-trash"></i>
+    </div>
+    <div class="food-item">
+        <img src="./Photos/sweet potato.jpeg" alt="mango">
+        <div class="cart-text">
+        <p>Mango</p>
+        <p> ₹350.72/- Qty:2kg</p>
+        </div>
+        <i class="fa-solid fa-trash"></i>
+    </div>
+    <h2 style="text-align: center; color:rgb(53, 85, 5); margin-top:7px; font-family: fantasy;font-weight: bolder;">Total Cost:₹2910.89/-</h2>
+    <button>Checkout</button>
+</div>
+<form class="log-in" action="#">
+    <h1>LOGIN FORM</h1>
+<input type="email" placeholder="Your Email" class="box">
+<input type="password" placeholder="Your Password" class="box">
+<div>
+<h3 >Forget Your Password</h3> 
+<a href="#">Click Here</a>
+</div>
+<div>
+<h3>Don't Have an Account</h3>
+ <a href="#">Create Now</a>
+</div>
+<input type="submit"  value="Login Now" class="box" name="ab">
+</form>
+<div class="hidden-menubar">
+    <div class="hid-menu">
+        <a href="#home">Home</a>
+    </div>
+    <div class="hid-menu">
+    <a href="#features">Features</a>
+    </div>
+    <div class="hid-menu">
+    <a href="#products">Products</a>
+    </div>
+    <div class="hid-menu">
+    <a href="#">Categories</a>
+    </div>
+    <div class="hid-menu">
+    <a href="#reviews">Reviews</a>
+    </div>
+    <div class="hid-menu">
+        <a href="#blogs">Blogs</a></div>
+</div>
+    </section>
+<section id="home">
+    <div class="home-img1">
+        <img src="./Photos/vegetables-box.webp" alt="vegetables">
+            </div>
+    <div class="home-text">
+        <h1>Fresh And <span style="color:green">Organic </span>Products For You</h1>
+        <br>
+        <p>A Food Wbsite made solely for customers who are food lovers and want organic foods and variety food items to be delivered at their doorstep at the earliest</p>
+        <button>Shop Now</button>
+    </div>
+    <div class="home-img2">
+<img src="./Photos/Fruits.jpg" alt="fruits">
+    </div>
+</section>
+<section id="features">
+    <h1 style="text-align: center;padding-top: 2.7rem; font-size: 2.3rem;">Our <span class="clip-text">Features</span></h1>
+    <div class="feature-container">
+        <div class="outer-feature-box">
+            <div class="feature-box">
+                <img src="./Photos/feature-1 .avif" alt="pic1">
+                <h2>Fresh and Organic</h2>
+                <p>We provide fresh quality products which are 100% organic in nature.No negative feedback received till date.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="outer-feature-box">
+            <div class="feature-box">
+                <img src="./Photos/360_F_332799148_55PKYZ6OkLWfuQTTZ0jeD8gzNnweZ0mU.jpg" alt="pic1">
+                <h2>Free Delivery</h2>
+                <p>Items will be delivered at your doorstep in the least possible time.No extra amount is charged for delivery.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="outer-feature-box">
+            <div class="feature-box">
+                <img src="./Photos/online-card-payment-flat-style-design-vector-illustration-stock-illustration_357500-421.avif" alt="pic1">
+                <h2>Easy Payments</h2>
+                <p> Both online and Cash on Delivery mode is acceptable.15% cashback is provided for online transactions.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="products">
+    <h1 style="text-align: center;padding-top: 2rem; font-size: 2.3rem;">Our <span class="clip-text">Products</span></h1>
+   <div class="swiper product-slider">
+    <div class="swiper-wrapper wrapper">
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/img1 product.webp" alt="pic1">
+                <h2>Canned Cold Drinks</h2>
+                <p>₹40/- ₹80/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/img2 product.jpg" alt="pic1">
+                <h2>Beer Products</h2>
+                <p>₹250/- -₹1200/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/img 3 product.jpg" alt="pic1">
+                <h2>Nutritious Milk</h2>
+                <p>₹80/- -₹120/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/darjeeling tea.webp" alt="pic1">
+                <h2>Aromatic Tea</h2>
+                <p>₹150/- -₹800/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/img 05.jpeg" alt="pic1">
+                <h2>Coffee Beans</h2>
+                <p>₹450/- -₹2000/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/img 6 product.webp" alt="pic1">
+                <h2>Drinking Water</h2>
+                <p>₹40/- ₹60/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/478-4789312_cold-drink-png-coca-cola-cold-drinks-png.png" alt="pic1">
+                <h2>Soft Drinks</h2>
+                <p>₹60/- ₹80/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="swiper product-slider">
+    <div class="swiper-wrapper wrapper">
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/potatoes.webp" alt="pic1">
+                <h2>Potato</h2>
+                <p>₹40/- ₹48/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/BottleGourdlong_1036x.webp" alt="pic1">
+                <h2>Gourd</h2>
+                <p>₹60/- ₹80/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/cauliflower-181864-2.jpg" alt="pic1">
+                <h2>CauliFlower</h2>
+                <p>₹30/- ₹60/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/potol.jpeg" alt="pic1">
+                <h2>Pointed Gourd</h2>
+                <p>₹310/- ₹340/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/Main-onion.jpg" alt="pic1">
+                <h2>Onion</h2>
+                <p>₹60/- ₹120/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/pumpkin-patch.webp" alt="pic1">
+                <h2>Pumpkin</h2>
+                <p>₹40/- ₹50/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/carrot.avif" alt="pic1">
+                <h2>Carrot</h2>
+                <p>₹110/- ₹140/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="swiper product-slider">
+    <div class="swiper-wrapper wrapper">
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/apples-.jpg" alt="pic1">
+                <h2>Shimla Apples</h2>
+                <p>₹350/- ₹480/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box sosha">
+                <img src="./Photos/how-to-grow-a-mango-tree-in-pot-1_1024x1024.webp" alt="pic1">
+                <h2>Mango</h2>
+                <p>₹70/- ₹250/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box sosha">
+                <img src="./Photos/ARS_cucumber.jpg" alt="pic1">
+                <h2>Cucumber</h2>
+                <p>₹250/- ₹280/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box sosha">
+                <img src="./Photos/nurserylive-litchi-tree-grown-through-seeds-plant.jpg" alt="pic1">
+                <h2>Litchies</h2>
+                <p>₹180/- ₹220/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/what-are-grapes-5193263-hero-01-80564d77b6534aa8bfc34f378556e513.jpg" alt="pic1">
+                <h2>Grapes</h2>
+                <p>₹110/- ₹130/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box sosha">
+                <img src="./Photos/pomegranate-and-seeds-s.webp" alt="pic1">
+                <h2>Pomegranate</h2>
+                <p>₹350/- ₹450/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/Pineapple.avif" alt="pic1">
+                <h2>Pineapple</h2>
+                <p>₹210/- ₹240/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="swiper product-slider">
+    <div class="swiper-wrapper wrapper">
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/Raw-Chicken-Mistakes-3x2-1-8a51428f2d5d46f3bc4dce8a5d1f32d3.png" alt="pic1">
+                <h2>Raw Chicken</h2>
+                <p>₹160/- ₹280/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box sosha">
+                <img src="./Photos/mutton-carcass-mutton-chopped-1636306851-6068050.jpeg" alt="pic1">
+                <h2>Fresh Mutton</h2>
+                <p>₹750/- ₹950/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box sosha">
+                <img src="./Photos/date palm.jpg" alt="pic1">
+                <h2>Arabica Khejurs</h2>
+                <p>₹150/- ₹300/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/toothpaste.jpeg" alt="pic1">
+                <h2>ToothPaste Items</h2>
+                <p>₹100/- ₹200/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box sosha">
+                <img src="./Photos/natural-honey.jpg" alt="pic1">
+                <h2>Pure Honey</h2>
+                <p>₹80/-₹90/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box sosha">
+                <img src="./Photos/organic-coorg-cashew-nuts-500-gm-coorg-dry-fruits-whole-big-size.20220919003557.webp" alt="pic1">
+                <h2>Cashew Nuts</h2>
+                <p>₹20/- ₹40/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="outer-feature-box swiper-slide">
+            <div class="feature-box">
+                <img src="./Photos/fishu.jpeg" alt="pic1">
+                <h2>Fish Products</h2>
+                <p>₹50/- ₹2200/-</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+<section id="reviews">
+    <h1 style="text-align: center;padding-top: 2rem; font-size: 2.3rem;">Customer's <span class="clip-text">Review</span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="outer-feature-box swiper-slide">
+                <div class="feature-box">
+                    <div class="rev-img">
+                    <img src="./Photos/west-bengal-chief-minister-mamata-banerjee-having-1484576.jpg" alt="pic1">
+                </div>
+                    <p>Their fish curry reminded me of my mother's cooking, with its fragrant spices and tender fish. Each bite was a nostalgic journey back to my childhood in Bengal.</p>
+                    <h2>Mamata Banerjee</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-feature-box swiper-slide">
+                <div class="feature-box">
+                    <div class="rev-img">
+                        <img src="./Photos/Kohli-diet-insta.webp" alt="pic1">
+                    </div>
+                    <p>The protein bowl is a powerhouse of nutrients, combining lean chicken, quinoa, and fresh veggies. Perfect for post-workout recovery!</p>
+                    <h2>Virat Kohli</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-feature-box swiper-slide">
+                <div class="feature-box">
+                    <div class="rev-img">
+                        <img src="./Photos/messi food.webp" alt="pic1">
+                    </div>
+                    <p>The innovative menu offers a futuristic dining experience with delicious quinoa bowls served seamlessly through their automated system. Efficient and tasty!</p>
+                    <h2>Lionnel Messi</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-feature-box swiper-slide">
+                <div class="feature-box">
+                    <div class="rev-img">
+                        <img src="./Photos/cr7 food.jpeg" alt="pic1">
+                    </div>
+                    <p>The quinoa salad is a perfect blend of nutritious and delicious, packed with fresh vegetables and a tangy dressing. Healthy eating at its best!</p>
+                    <h2>Cristiano Ronaldo</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-feature-box swiper-slide">
+                <div class="feature-box">
+                    <div class="rev-img">
+                        <img src="./Photos/dhoni food.avif" alt="pic1">
+                    </div>
+                    <p>The biryani is exceptional—aromatic, flavorful, and cooked to perfection. Reminds me of home-cooked meals in Ranchi.</p>
+                    <h2>Mahendra Singh Dhoni</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-feature-box swiper-slide">
+                <div class="feature-box">
+                    <div class="rev-img">
+                        <img src="./Photos/ modi food.jpg" alt="pic1">
+                    </div>
+                    <p>The Gujarati thali is a feast for the senses, with every dish reminding me of festive meals from my younger days. Absolutely delightful!</p>
+                    <h2>Narendra Modi</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-feature-box swiper-slide">
+                <div class="feature-box">
+                    <div class="rev-img">
+                        <img src="./Photos/rohit-food_300x532xt.jpg" alt="pic1">
+                    </div>
+                    <p>The butter chicken is simply mouthwatering—rich, creamy, and perfectly spiced. A true treat for the taste buds!</p>
+                    <h2>Rohit Sharma</h2>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+                                                
+</section>
+<section id="blogs">
+    <h1 style="text-align: center;padding-top: 2rem; font-size: 2.3rem;">Our<span class="clip-text">Blogs</span></h1>
+    <div class="blog-container">
+        <div class="blog-box">
+            <img src="./Photos/Corn_Maize-Farming-in-Mexico5.jpg" alt="pic">
+            <div class="blog-icon">
+                <div class="icon-1">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Bharat Tyagi</p>
+                </div>
+               <div class="icon-1">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>20th August,2024</p>
+               </div>
+            </div>
+            <hr>
+            <h2 style="margin-left: 1rem;">Maize Cultivation in Mexico</h2>
+            <p style="padding: 0% 2%;">Maize cultivation in Mexico dates back over 9,000 years and is deeply embedded in the country's culture and history. The diverse climates and soil types in Mexico allow for the cultivation of numerous maize varieties, including the native landraces that are essential for traditional dishes like tortillas and tamales. Modern challenges in maize cultivation include dealing with climate change, pests, and the balance between traditional farming methods and modern agricultural practices.</p>
+        <button style="margin-left: 1rem; padding:3.5%;width:40%;font-size: 1rem;font-weight: 800;border-radius: 1rem; border:3.8px solid darkolivegreen;">Read More</button>
+        </div>
+        <div class="blog-box">
+            <img src="./Photos/rice.avif" alt="pic">
+            <div class="blog-icon">
+                <div class="icon-1">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Guddu Pandit</p>
+                </div>
+               <div class="icon-1">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>6th December,2024</p>
+               </div>
+            </div>
+            <hr>
+            <h2 style="margin-left: 1rem;">Rice: A Staple that Binds India Together</h2>
+            <p style="padding: 0% 2%;">Rice holds immense importance in India, serving as the primary food source for millions and forming the basis of many regional dishes. It plays a crucial role in cultural rituals and festivals, symbolizing prosperity and fertility. Additionally, rice farming is a significant livelihood for a large portion of the rural population, sustaining the agricultural economy.</p>
+        <button style="margin-left: 1rem; padding:3.5%;width:40%;font-size: 1rem;font-weight: 800;border-radius: 1rem; border:3.8px solid darkolivegreen;">Read More</button>
+        </div>
+        <div class="blog-box">
+            <img src="./Photos/Harvesting-Strawberries.jpg" alt="pic">
+            <div class="blog-icon">
+                <div class="icon-1">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Phool Chand Tripathi</p>
+                </div>
+               <div class="icon-1">
+                <i class="fa-solid fa-calendar-days"></i>
+                <p>16th January,2024</p>
+               </div>
+            </div>
+            <hr>
+            <h2 style="margin-left: 1rem;">Spanish magic on Strawberries</h2>
+            <p style="padding: 0% 2%;">Strawberry cultivation in Spain, particularly in the Huelva region, is a major agricultural activity contributing significantly to the country's economy. Spain's favorable climate and advanced farming techniques allow for a long growing season and high-quality fruit production. The country is one of the top exporters of strawberries in Europe, supplying markets across the continent.</p>
+        <button style="margin-left: 1rem; padding:3.5%;width:40%;font-size: 1rem;font-weight: 800;border-radius: 1rem; border:3.8px solid darkolivegreen;">Read More</button>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="foot-container">
+        <div class="foot-1">
+            <div class="foot1-item">
+            <h2>GROCO</h2> 
+            <i class="fa-solid fa-bowl-rice"></i>
+        </div>
+        <p>Feel free to follow us on our social media handles.The links are given below</p>
+        <div class="foot-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+        </div>
+        <div class="foot-2">
+            <h2>Contact Info</h2>
+            <div class="foot1-item">
+                <i class="fa-solid fa-phone"></i>
+                +91-777 666 7850
+            </div>
+            <div class="foot1-item">
+                <i class="fa-solid fa-phone"></i>
+                +90-123 456 7890
+            </div>
+            <div class="foot1-item">
+                <i class="fa-solid fa-envelope"></i>
+                mirzapur@gmail.com
+            </div>
+            <div class="foot1-item">
+                <i class="fa-solid fa-location-dot"></i>
+                Kalyani,India 741244
+            </div>
+        </div>
+        <div class="foot-3">
+            <h2>Quick Links</h2>
+            <div class="foot1-item">
+                <i class="fa-solid fa-arrow-right"></i>
+                Home
+            </div>
+            <div class="foot1-item">
+                <i class="fa-solid fa-arrow-right"></i>
+                Features
+            </div>
+            <div class="foot1-item">
+                <i class="fa-solid fa-arrow-right"></i>
+                Products
+            </div>
+            <div class="foot1-item">
+                <i class="fa-solid fa-arrow-right"></i>
+                Categories
+            </div>
+            <div class="foot1-item">
+                <i class="fa-solid fa-arrow-right"></i>
+                Reviews
+            </div>
+            <div class="foot1-item">
+                <i class="fa-solid fa-arrow-right"></i>
+                Blogs
+            </div>
+        </div>
+        <div class="foot-4">
+            <h2>Newsletter</h2>
+            Subscribe for Latest Updates
+            <br>
+            <input type="email" placeholder="Your email">
+            <br>
+            <button>Subscribe</button>
+            <div class="foot-img">
+                <img src="./Photos/CRED_(FinTech_company)_logo.png" alt="img">
+                <img src="./Photos/mastercard.jpg" alt="img">
+                <img src="./Photos/Visadebitcardpng-1599584312349.png" alt="img">
+                <img src="./Photos/rupay.png" alt="img">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3><marquee direction="left" scrollamount="10" behavior="alternate">Created with &hearts; by Debajit Pramanick | All Rights Reserved</marquee></h3>
+    <pre style="font-family: cursive; text-align: center;">&copy;Deba-Creations</pre>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
