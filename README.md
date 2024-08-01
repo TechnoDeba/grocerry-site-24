@@ -26,4 +26,4 @@ Community Features: Forums, comment sections, and social media integration for u
   </ol>
 </h3>
 
-<h2>Check my website in this <a href="https://technodeba.github.io/grocerry-site-24/"> <ul>Link</ul>ul></a></h2>
+<h2>Check my website in this <a href="https://technodeba.github.io/grocerry-site-24/" style="text-decoration:underline" > link</a></h2>
