@@ -22,8 +22,8 @@ Community Features: Forums, comment sections, and social media integration for u
     <li>HTML</li>
     <li>CSS</li>
     <li>JS</li>
-    <li>Seiper</li>
+    <li>Swiper</li>
   </ol>
 </h3>
 
-<h2>Check my website in this <a href="https://technodeba.github.io/grocerry-site-24/" style="text-decoration:underline" > link</a></h2>
+<h2>Check my website in this <a href="https://technodeba.github.io/grocerry-site-24/"> link</a></h2>
